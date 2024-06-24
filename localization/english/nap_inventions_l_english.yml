@@ -1,0 +1,5 @@
+﻿l_english: 
+  steam_engine:0 "Steam Engine"
+  steam_engine_desc:0 "The steam engine uses the force produced by steam pressure to push a piston back and forth inside a cylinder. This pushing force can be transformed, by a connecting rod and crank, into rotational force for work."
+  threshing_machine:0 "Threshing Machine"
+  threshing_machine_desc:0 "A device used to remove the outer husks from grains of wheat."
