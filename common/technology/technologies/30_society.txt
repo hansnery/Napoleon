@@ -41,6 +41,43 @@ urban_planning = {
 	}
 }
 
+tech_bureaucracy = {
+	# Unlocks Government Administration building
+	# Unlocks Isolationism - Economic System Law
+	# Unlocks Road Maintenance Decree
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/bureaucracy.dds"
+	category = society
+	
+	modifier = {
+		country_institution_police_max_investment_add = 2
+	}
+
+	unlocking_technologies = {
+		leviathan
+	}
+	
+	ai_weight = {
+		value = 3 # Very important in general
+	}
+}
+
+currency_standards = {
+	# Unlocks Payroll Tax - Income Taxation Law
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/currency_standards.dds"
+	category = society
+	
+	unlocking_technologies = {
+		international_trade
+		centralization
+	}
+	
+	ai_weight = {
+		value = 3 # Very important in general
+	}
+}
+
 rationalism = {
 	# Unlocks Freedom of Conscience - Church and State Law
 	era = era_1
@@ -57,20 +94,17 @@ rationalism = {
 	}
 }
 
-tech_bureaucracy = {
-	# Unlocks Government Administration building
-	# Unlocks Isolationism - Economic System Law
-	# Unlocks Road Maintenance Decree
+leviathan = {
 	era = era_1
-	texture = "gfx/interface/icons/invention_icons/bureaucracy.dds"
+	texture = "gfx/interface/icons/invention_icons/leviathan.dds"
 	category = society
 	
 	modifier = {
-		country_institution_police_max_investment_add = 2
+		country_authority_mult = 0.1
 	}
-
+	
 	unlocking_technologies = {
-		urbanization
+		rationalism
 	}
 	
 	ai_weight = {
@@ -78,15 +112,90 @@ tech_bureaucracy = {
 	}
 }
 
-currency_standards = {
-	# Unlocks Payroll Tax - Income Taxation Law
+enlightenment = {
 	era = era_1
-	texture = "gfx/interface/icons/invention_icons/currency_standards.dds"
+	texture = "gfx/interface/icons/invention_icons/enlightenment.dds"
 	category = society
 	
+	modifier = {
+		country_prestige_mult = 0.1
+	}
+	
 	unlocking_technologies = {
-		international_trade
-		centralization
+		leviathan
+	}
+	
+	ai_weight = {
+		value = 3 # Very important in general
+	}
+}
+
+separation_of_powers = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/separation_of_powers.dds"
+	category = society
+	
+	modifier = {
+		interest_group_ig_intelligentsia_pol_str_mult = 0.05
+	}
+	
+	unlocking_technologies = {
+		enlightenment
+	}
+	
+	ai_weight = {
+		value = 3 # Very important in general
+	}
+}
+
+natural_rights = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/natural_rights.dds"
+	category = society
+	
+	modifier = {
+		interest_group_ig_intelligentsia_pol_str_mult = 0.05
+	}
+	
+	unlocking_technologies = {
+		enlightenment
+	}
+	
+	ai_weight = {
+		value = 3 # Very important in general
+	}
+}
+
+social_contract = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/social_contract.dds"
+	category = society
+	
+	modifier = {
+		interest_group_ig_intelligentsia_pol_str_mult = 0.05
+	}
+	
+	unlocking_technologies = {
+		natural_rights
+		separation_of_powers
+	}
+	
+	ai_weight = {
+		value = 3 # Very important in general
+	}
+}
+
+constitutionalism = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/constitutionalism.dds"
+	category = society
+	
+	modifier = {
+		interest_group_ig_intelligentsia_pol_str_mult = 0.1
+	}
+	
+	unlocking_technologies = {
+		social_contract
 	}
 	
 	ai_weight = {
@@ -98,7 +207,7 @@ democracy = {
 	# Unlocks Right of Assembly - Freedom of Speech Law
 	# Unlocks Landed Voting, Wealth Voting, Census Voting - Distribution of Power Laws
 	# Unlocks Presidential Republic, Parliamentary Republic - Governance Principles Law
-	era = era_1
+	era = era_2
 	texture = "gfx/interface/icons/invention_icons/democracy.dds"
 	category = society
 	
@@ -107,7 +216,7 @@ democracy = {
 	}
 	
 	unlocking_technologies = {
-		rationalism
+		constitutionalism
 	}
 	
 	ai_weight = {
@@ -190,7 +299,7 @@ corporate_charters = {
 }
 
 banking = {
-	era = era_1
+	era = era_2
 	texture = "gfx/interface/icons/invention_icons/banking.dds"
 	category = society
 	
@@ -231,7 +340,7 @@ colonization = {
 	# Unlocks Colonial Resettlement, Colonial Exploitation - Colonial Affairs Laws
 	# Unlocks various expedition decisions
 	# Unlocks the Suez Canal
-	era = era_1
+	era = era_2
 	texture = "gfx/interface/icons/invention_icons/colonization.dds"
 	category = society
 
@@ -275,7 +384,6 @@ law_enforcement = {
 	
 	unlocking_technologies = {
 		tech_bureaucracy
-		urban_planning
 	}
 	
 	ai_weight = {
@@ -284,7 +392,7 @@ law_enforcement = {
 }
 
 stock_exchange = {
-	era = era_1
+	era = era_2
 	texture = "gfx/interface/icons/invention_icons/stock_exchanges.dds"
 	category = society	
 	
@@ -322,7 +430,7 @@ medical_degrees = {
 }
 
 mass_communication = {
-	era = era_1
+	era = era_2
 	texture = "gfx/interface/icons/invention_icons/mass_communication.dds"
 	category = society
 	
