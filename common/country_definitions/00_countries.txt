@@ -1,9 +1,20 @@
-﻿LIE = {
+﻿CLG = {
 	color = { 44 230 15 }
 	
 	country_type = recognized
 
-	tier = city_state
+	tier = principality
+	
+	cultures = { north_german }
+	capital = STATE_NORTH_RHINE
+}
+
+LIE = {
+	color = { 221 255 46 }
+	
+	country_type = recognized
+
+	tier = principality
 	
 	cultures = { north_german }
 	capital = STATE_WALLONIA

@@ -7310,7 +7310,7 @@ STATES = {
 	}
 	s:STATE_WESTPHALIA = {
 		create_state = {
-			country = c:PRU
+			country = c:CLG
 			owned_provinces = { x1DD141 xA08061 x218061 x418021 x4101A0 x910095 }
 		}
 		create_state = {
@@ -7323,6 +7323,7 @@ STATES = {
 		}		
 		
 		add_homeland = cu:north_german
+		add_claim = c:PRU
 	}
 	s:STATE_ANHALT = {
 		create_state = {
@@ -7369,19 +7370,29 @@ STATES = {
 	}
 	s:STATE_NORTH_RHINE = {
 		create_state = {
+			country = c:CLG
+			owned_provinces = { x9F4072 x834B66 x518021 }
+		}
+		create_state = {
 			country = c:PRU
-			owned_provinces = { x9F4072 x8001E0 x834B66 x518021 x29CCD6 x486F6A }
+			owned_provinces = { x486F6A }
+		}
+		create_state = {
+			country = c:BAV
+			owned_provinces = { x29CCD6 x8001E0 }
 		}
 		
 		add_homeland = cu:north_german
+		# add_claim = c:PRU
 	}
 	s:STATE_RUHR = {
 		create_state = {
-			country = c:PRU
+			country = c:BAV
 			owned_provinces = { "x2101E0" "x5101A0" "xD08021" x0180E0 }
 		}
 		
 		add_homeland = cu:north_german
+		add_claim = c:PRU
 	}
 	s:STATE_SILESIA = {
 		create_state = {
@@ -7446,11 +7457,15 @@ STATES = {
 		}
 		create_state = {
 			country = c:HAN
-			owned_provinces = { x165E05 x694B91 xBBA504 xBF00DF x4D62A0 x8080E0 x784B8E }
+			owned_provinces = { x165E05 x694B91 xBBA504 xBF00DF }
 		}
 		create_state = {
 			country = c:PRU
 			owned_provinces = { xF9DCA2 }
+		}
+		create_state = {
+			country = c:CLG
+			owned_provinces = { x784B8E x8080E0 x4D62A0 }
 		}
 		
 		add_homeland = cu:north_german

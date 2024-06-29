@@ -1206,7 +1206,7 @@
 		}
 	}
 	s:STATE_WESTPHALIA = {
-		region_state:PRU = {
+		region_state:CLG = {
 			create_pop = {
 				culture = north_german
 				religion = catholic
@@ -1305,29 +1305,33 @@
 		}
 	}
 	s:STATE_NORTH_RHINE = {
-		region_state:PRU = {
+		region_state:CLG = {
 			create_pop = {
 				culture = north_german
 				religion = catholic
 				size = 830379
 			}
 			create_pop = {
-				culture = north_german
-				size = 179847
+				culture = ashkenazi
+				size = 1502
 			}
+		}
+		region_state:PRU = {
 			create_pop = {
 				culture = wallonian
 				size = 4000
 			}
+		}
+		region_state:BAV = {
 			create_pop = {
-				culture = ashkenazi
-				size = 1502
+				culture = north_german
+				size = 179847
 			}
 		}
 	}
 
 	s:STATE_RUHR = {
-		region_state:PRU = {
+		region_state:BAV = {
 			create_pop = {
 				culture = north_german
 				religion = catholic
@@ -1474,11 +1478,6 @@
 				size = 822208
 			}
 			create_pop = {
-				culture = north_german
-				religion = catholic
-				size = 195996
-			}
-			create_pop = {
 				culture = ashkenazi
 				size = 8000
 			}
@@ -1491,6 +1490,13 @@
 			create_pop = {
 				culture = north_german
 				size = 120000
+			}
+		}
+		region_state:CLG = {
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 195996
 			}
 		}
 	}
