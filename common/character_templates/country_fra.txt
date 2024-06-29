@@ -2,11 +2,36 @@
 
 ## game start interest group leaders ##
 
+FRA_louis_xvi = {
+	first_name = Louis
+	last_name = de_Bourbon
+	historical = yes
+	ruler = yes
+	birth_date = 1754.08.23
+	#dna = dna_king_louis_philippe_01
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	traits = {
+		#basic_political_operator
+		#tactful
+	}
+	on_created = {
+		set_variable = {
+			name = is_married
+		}
+	}
+	trait_generation = {
+		# nothing!
+	}
+}
+
+## Vanilla
+
 FRA_louis_philippe = {
 	first_name = Louis-Philippe
 	last_name = d_Orleans
 	historical = yes
-	ruler = yes
+	#ruler = yes
 	birth_date = 1773.10.6
 	dna = dna_king_louis_philippe_01
 	interest_group = ig_industrialists

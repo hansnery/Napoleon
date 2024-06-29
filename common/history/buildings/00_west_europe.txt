@@ -4451,16 +4451,16 @@
 			}
 		}
 	}
-	s:STATE_WALLONIA={
-		region_state:LUX={
+	s:STATE_LUXEMBOURG={
+		region_state:AUS={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:LUX"
+						country="c:AUS"
 						levels=1
-						region="STATE_WALLONIA"
+						region="STATE_LUXEMBOURG"
 					}
 				}
 				reserves=1
@@ -4471,21 +4471,23 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:LUX"
+						country="c:AUS"
 						levels=1
-						region="STATE_WALLONIA"
+						region="STATE_LUXEMBOURG"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 		}
-		region_state:BEL={
+	}
+	s:STATE_WALLONIA={
+		region_state:AUS={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:BEL"
+						country="c:AUS"
 						levels=1
 					}
 				}
@@ -4497,8 +4499,8 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:BEL"
-						levels=2
+						country="c:AUS"
+						levels=1
 						region="STATE_WALLONIA"
 					}
 				}
@@ -4509,7 +4511,7 @@
 				building="building_construction_sector"
 				add_ownership={
 					country={
-						country="c:BEL"
+						country="c:AUS"
 						levels=1
 					}
 				}
@@ -4521,8 +4523,8 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:BEL"
-						levels=2
+						country="c:AUS"
+						levels=1
 						region="STATE_WALLONIA"
 					}
 				}
@@ -4534,7 +4536,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:BEL"
+						country="c:AUS"
 						levels=1
 						region="STATE_WALLONIA"
 					}
@@ -4547,8 +4549,8 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:BEL"
-						levels=3
+						country="c:AUS"
+						levels=2
 						region="STATE_WALLONIA"
 					}
 				}
@@ -4560,8 +4562,8 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:BEL"
-						levels=5
+						country="c:AUS"
+						levels=3
 						region="STATE_WALLONIA"
 					}
 				}
@@ -4573,8 +4575,8 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:BEL"
-						levels=6
+						country="c:AUS"
+						levels=3
 						region="STATE_WALLONIA"
 					}
 				}
@@ -4586,8 +4588,8 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:BEL"
-						levels=2
+						country="c:AUS"
+						levels=1
 						region="STATE_WALLONIA"
 					}
 				}
@@ -4599,8 +4601,8 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:BEL"
-						levels=7
+						country="c:AUS"
+						levels=4
 						region="STATE_WALLONIA"
 					}
 				}
@@ -4612,8 +4614,8 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:BEL"
-						levels=3
+						country="c:AUS"
+						levels=2
 						region="STATE_WALLONIA"
 					}
 				}
@@ -4625,7 +4627,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:BEL"
+						country="c:AUS"
 						levels=1
 						region="STATE_WALLONIA"
 					}
@@ -4637,8 +4639,173 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:BEL"
-						levels=5
+						country="c:AUS"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+		}
+		region_state:LIE={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:LIE"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_vertical_filing_cabinets" }
+			}
+			create_building={
+				building="building_steel_mills"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:LIE"
+						levels=1
+						region="STATE_WALLONIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_blister_steel_process" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_construction_sector"
+				add_ownership={
+					country={
+						country="c:LIE"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_iron_frame_buildings" }
+			}
+			create_building={
+				building="building_chemical_plants"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:LIE"
+						levels=1
+						region="STATE_WALLONIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_artificial_fertilizers"  }
+			}
+			create_building={
+				building="building_explosives_factory"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:LIE"
+						levels=1
+						region="STATE_WALLONIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_leblanc_process"  }
+			}
+			create_building={
+				building="building_tooling_workshops"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:LIE"
+						levels=1
+						region="STATE_WALLONIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_steel" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_coal_mine"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:LIE"
+						levels=2
+						region="STATE_WALLONIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_iron_mine"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:LIE"
+						levels=3
+						region="STATE_WALLONIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_sulfur_mine"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:LIE"
+						levels=1
+						region="STATE_WALLONIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_sulfur_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_wheat_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:LIE"
+						levels=3
+						region="STATE_WALLONIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_tools" "pm_no_secondary"  "pm_soil_enriching_farming" }
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:LIE"
+						levels=1
+						region="STATE_WALLONIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+			create_building={
+				building="building_railway"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:LIE"
+						levels=1
+						region="STATE_WALLONIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_early_trains"  "pm_wooden_passenger_carriages" }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:LIE"
+						levels=2
 					}
 				}
 				reserves=1
@@ -4647,12 +4814,12 @@
 		}
 	}
 	s:STATE_FLANDERS={
-		region_state:BEL={
+		region_state:AUS={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:BEL"
+						country="c:AUS"
 						levels=3
 					}
 				}
@@ -4663,7 +4830,7 @@
 				building="building_construction_sector"
 				add_ownership={
 					country={
-						country="c:BEL"
+						country="c:AUS"
 						levels=1
 					}
 				}
@@ -4674,7 +4841,7 @@
 				building="building_paper_mills"
 				add_ownership={
 					country={
-						country="c:BEL"
+						country="c:AUS"
 						levels=1
 					}
 				}
@@ -4686,7 +4853,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:BEL"
+						country="c:AUS"
 						levels=2
 						region="STATE_FLANDERS"
 					}
@@ -4699,7 +4866,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:BEL"
+						country="c:AUS"
 						levels=1
 						region="STATE_FLANDERS"
 					}
@@ -4711,7 +4878,7 @@
 				building="building_university"
 				add_ownership={
 					country={
-						country="c:BEL"
+						country="c:AUS"
 						levels=2
 					}
 				}
@@ -4723,13 +4890,13 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:BEL"
+						country="c:AUS"
 						levels=3
 						region="STATE_FLANDERS"
 					}
 					building={
 						type="building_textile_mills"
-						country="c:BEL"
+						country="c:AUS"
 						levels=1
 						region="STATE_FLANDERS"
 					}
@@ -4742,13 +4909,13 @@
 				add_ownership={
 					building={
 						type="building_furniture_manufacturies"
-						country="c:BEL"
+						country="c:AUS"
 						levels=2
 						region="STATE_FLANDERS"
 					}
 					building={
 						type="building_financial_district"
-						country="c:BEL"
+						country="c:AUS"
 						levels=1
 						region="STATE_FLANDERS"
 					}
@@ -4761,13 +4928,13 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:BEL"
+						country="c:AUS"
 						levels=2
 						region="STATE_FLANDERS"
 					}
 					building={
 						type="building_logging_camp"
-						country="c:BEL"
+						country="c:AUS"
 						levels=2
 						region="STATE_FLANDERS"
 					}
@@ -4780,7 +4947,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:BEL"
+						country="c:AUS"
 						levels=1
 						region="STATE_FLANDERS"
 					}
@@ -4793,13 +4960,13 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:BEL"
+						country="c:AUS"
 						levels=4
 						region="STATE_FLANDERS"
 					}
 					building={
 						type="building_wheat_farm"
-						country="c:BEL"
+						country="c:AUS"
 						levels=2
 						region="STATE_FLANDERS"
 					}
@@ -4812,7 +4979,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:BEL"
+						country="c:AUS"
 						levels=5
 						region="STATE_FLANDERS"
 					}
@@ -4825,7 +4992,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:BEL"
+						country="c:AUS"
 						levels=1
 						region="STATE_FLANDERS"
 					}
@@ -4837,7 +5004,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:BEL"
+						country="c:AUS"
 						levels=5
 					}
 				}
@@ -4848,7 +5015,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:BEL"
+						country="c:AUS"
 						levels=3
 					}
 				}
@@ -6591,7 +6758,7 @@
 					building={
 						type="building_manor_house"
 						country="c:HAN"
-						levels=2
+						levels=1
 						region="STATE_HANNOVER"
 					}
 				}
@@ -6616,6 +6783,86 @@
 				add_ownership={
 					country={
 						country="c:HAN"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
+		}
+		region_state:PRU={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:PRU"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
+				building="building_university"
+				add_ownership={
+					country={
+						country="c:PRU"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_scholastic_education" "pm_religious_academia" }
+			}
+			create_building={
+				building="building_iron_mine"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:PRU"
+						levels=1
+						region="STATE_HANNOVER"
+					}
+					building={
+						type="building_iron_mine"
+						country="c:PRU"
+						levels=1
+						region="STATE_HANNOVER"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:PRU"
+						levels=1
+						region="STATE_HANNOVER"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled"  }
+			}
+			create_building={
+				building="building_livestock_ranch"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:PRU"
+						levels=1
+						region="STATE_HANNOVER"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
+			}
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:PRU"
 						levels=1
 					}
 				}

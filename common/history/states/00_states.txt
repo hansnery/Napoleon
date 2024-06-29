@@ -3461,25 +3461,40 @@ STATES = {
 	}
 	s:STATE_WALLONIA = {
 		create_state = {
-			country = c:LUX
-			owned_provinces = { x5180A0 }
+			# Liege
+			country = c:LIE
+			owned_provinces = { x3A5FB9 xEF2040 xD001A0 x916574 }
 		}
 		create_state = {
-			country = c:BEL
-			owned_provinces = { xB0A0C0 x916574 x2D32D7 x8080A0 xEF2040 x3A5FB9 xD001A0 }
+			country = c:AUS
+			owned_provinces = { xB0A0C0 x2D32D7 x8080A0 }
 		}
 
 		add_homeland = cu:wallonian
 		add_claim = c:NET
+		add_claim = c:BEL
+	}
+	s:STATE_LUXEMBOURG = {
+		create_state = {
+			# Luxembourg
+			country = c:AUS
+			owned_provinces = { x5180A0 }
+		}
+
+		add_homeland = cu:wallonian
+		add_claim = c:NET
+		add_claim = c:BEL
+		add_claim = c:LUX
 	}
 	s:STATE_FLANDERS = {
 		create_state = {
-			country = c:BEL
+			country = c:AUS
 			owned_provinces = { x93FB2E x018061 x0141A0 x8041A0 x800060 x808061 }
 		}
 
 		add_homeland = cu:flemish
 		add_claim = c:NET
+		add_claim = c:BEL
 	}
 	s:STATE_FRIESLAND = {
 		create_state = {
@@ -7431,7 +7446,11 @@ STATES = {
 		}
 		create_state = {
 			country = c:HAN
-			owned_provinces = { x165E05 x694B91 xBBA504 xBF00DF x4D62A0 x8080E0 x784B8E xF9DCA2 }
+			owned_provinces = { x165E05 x694B91 xBBA504 xBF00DF x4D62A0 x8080E0 x784B8E }
+		}
+		create_state = {
+			country = c:PRU
+			owned_provinces = { xF9DCA2 }
 		}
 		
 		add_homeland = cu:north_german

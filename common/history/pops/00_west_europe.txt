@@ -908,8 +908,8 @@
 			}
 		}
 	}
-	s:STATE_WALLONIA = {
-		region_state:LUX = {
+	s:STATE_LUXEMBOURG = {
+		region_state:AUS = {
 			create_pop = {
 				culture = wallonian
 				size = 103992
@@ -928,16 +928,13 @@
 				size = 210
 			}
 		}
-		# Hainaut, Liège, Luxembourg, and Namur
-		region_state:BEL = { # 
+	}
+	s:STATE_WALLONIA = {
+		# Hainaut and Namur
+		region_state:AUS = { # 
 			create_pop = {
 				culture = wallonian # 'Walloon & French' in census data.
-				size = 1413476
-			}
-			create_pop = {
-				culture = north_german
-				religion = catholic
-				size = 27847
+				size = 1331453
 			}
 			create_pop = {
 				culture = flemish # 'Flemish & Dutch' in census data.
@@ -957,10 +954,22 @@
 				size = 205
 			}
 		}
+		# Liège
+		region_state:LIE = { # 
+			create_pop = {
+				culture = wallonian # 'Walloon & French' in census data.
+				size = 71213
+			}
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 27847
+			}
+		}
 	}
 	# Antwerp, Brabant, West Flanders, East Flanders, and Limburg
 	s:STATE_FLANDERS = {
-		region_state:BEL = {
+		region_state:AUS = {
 			create_pop = {
 				culture = flemish # 'Flemish & Dutch' in census data.
 				size = 2224197
@@ -1462,7 +1471,7 @@
 		region_state:HAN = {
 			create_pop = {
 				culture = north_german
-				size = 942208
+				size = 822208
 			}
 			create_pop = {
 				culture = north_german
@@ -1476,6 +1485,12 @@
 			create_pop = {
 				culture = dutch
 				size = 4004
+			}
+		}
+		region_state:PRU = {
+			create_pop = {
+				culture = north_german
+				size = 120000
 			}
 		}
 	}
